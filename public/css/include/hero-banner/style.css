@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "code";
+    src: url("../../../assets/fonts/MonumentExtended-Regular.otf")
+        format("opentype");
+}
+
+@font-face {
+    font-family: "codebold";
+    src: url("../../../assets/fonts/monumentExtended-ultrabold.otf")
+        format("opentype");
+}
+
+.section-hero-banner {
+    height: 92vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container-hero-banner {
+    height: 100%;
+}
+
+.content-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.content-title h1,
+p {
+    color: white;
+}
+
+.content-title h1 {
+    font-family: monospace;
+    font-size: 12vw;
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+
+.content-title p {
+    font-size: 25px;
+    font-family: "code", serif;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1000px) {
+    .container-hero-banner {
+        flex-direction: row;
+    }
+
+    .content-title {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .content-title p {
+        font-size: 25px;
+    }
+}

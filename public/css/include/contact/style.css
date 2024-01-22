@@ -1,0 +1,36 @@
+h1 {
+    color: white;
+}
+
+#formulaire {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+}
+
+.container-form {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.content-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container-form label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.button-form {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+}
