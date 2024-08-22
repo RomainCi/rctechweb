@@ -1,6 +1,7 @@
 .section-service {
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    margin-top: 5%;
 }
 .title-service h1 {
     color: white;
@@ -21,7 +22,7 @@
     box-shadow: 0 4px 8px rgb(247, 244, 244); /* Ombre légère */
 }
 
-img {
+.image-service {
     width: 100%;
     height: 300px;
 }

@@ -1,23 +1,58 @@
+header{
+    display: unset;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     height: 8vh;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     transition: all 0.3s ease-in-out;
     align-items: center;
     z-index: 5;
+    /* border-bottom: 1px solid white; */
+    background-color: #494399;
 }
 
 
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background:transparent;
+    z-index: 99;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background: #72EFE9;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
 .nav-menu {
     margin: 0;
     display: flex;
     justify-content: space-around;
     gap: 60px;
     align-items: center;
-    padding: 0;
+    padding: 0 30px 0 0;
 }
+
+@media screen and (min-width: 768px) {
+    .navbar{
+        position: relative;
+    }
+    .nav-menu{
+        display: none;
+    }
+}
+
+
+
 
 .nav-item {
     list-style: none;
@@ -31,6 +66,7 @@
 .nav-link {
     color: white;
     text-decoration: none;
+    font-family: "code",sans-serif ;
 }
 
 .nav-hamburger {
@@ -79,21 +115,33 @@
     }
 
     .nav-menu {
-        position: fixed;
+        position: absolute;
         top: 8vh;
         gap: 20px;
         left: -100%;
         flex-direction: column;
-        width: 230px;
+        width: 200px;
         transition: 0.3s;
         z-index: 4;
         height: 92vh;
-        background: black;
+        /* background: radial-gradient(circle, white, #1D0076, #165313); */
+    
+            background-image: radial-gradient(
+              farthest-corner at 40px 40px,
+              #f35 0%,
+              #43e 100%
+            );
+  
+          
+        border-top: white solid 1px;
+        padding: 0;
+        backdrop-filter: blur(12vmax)
     }
 
     .nav-menu.active {
         left: 0;
         height: 92vh;
+        width: 100%;
     }
 
     .navbar.active{

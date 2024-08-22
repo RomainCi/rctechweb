@@ -1,5 +1,12 @@
+#contact{
+    margin-top: 15%;
+}
+
 h1 {
     color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
 }
 
 #formulaire {
@@ -33,4 +40,16 @@ h1 {
     color: white;
     border-radius: 5px;
     margin-top: 5px;
+}
+.session-message p{
+    margin: 0;
+    padding: 18px 0 18px 0;
+}
+.success p{
+    color: green;
+    font-size: 15px;
+    text-align: center;
+}
+.error p{
+    color: red;;
 }

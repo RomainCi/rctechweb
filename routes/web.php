@@ -16,4 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', ServiceIndex::class)->name('service.index');
+Route::get('/contact', ServiceIndex::class)->name('service.index');
+Route::get('/service', ServiceIndex::class)->name('service.index');
+route::get('/realisation', ServiceIndex::class)->name('service.index');
 Route::post('/contact', ContactStore::class)->name('contact.store');

@@ -1,0 +1,183 @@
+#propos{
+ 
+    margin-top: 5%;
+}
+
+.propos-2{
+   margin-top: 5%;
+}
+.text p{
+    text-align: left;
+    margin: 0;
+    color:#494399;
+    font-size: 16px;
+}
+
+h1{
+    margin-top: 0;
+}
+.propos,.propos-2{
+    height: 90vh;
+}
+
+.propos-2{
+    margin-top: 5%;
+}
+.container-propos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* position: relative; */
+    /* height: 1150px; */
+}
+.content-text,.content-image,.content-text-2,.content-image-2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-image-2,.content-text-2{
+    position: relative;
+}
+
+
+
+.text h4{
+font-size: 20px;
+color: #494399;
+}
+
+.text{
+    box-sizing: border-box;
+    position: absolute;
+    top:20%;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px;
+    border-radius: 40px;
+}
+
+.text-2,.cards-2{
+    margin-top: 20px;
+}
+.text-3,.cards-3{
+    margin-top: 40px;
+}
+
+.text{
+    z-index: 10 !important;
+}
+
+.cards{
+    position: absolute;
+    top: 20%;
+    z-index: 10;
+ 
+}
+
+.image-propos{
+    height: 400px;
+    border-radius: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.1);
+   
+}
+
+.container-propos-2{
+    display: flex;
+   
+}
+
+.text-propos-2{
+    box-sizing: border-box;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    /* border: 1px white solid; */
+    padding: 30px 30px;
+    border-radius: 40px;
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right:auto ;
+    left: 0;
+    right: 0;
+}
+.text-propos-2 p{
+    color:#494399;
+    font-size: 15px;
+    text-align: left;
+}
+
+.image-propos-2{
+    height: 600px;
+    width: 600px;
+    border-radius: 40px;
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right:auto ;
+    left: 0;
+    right: 0;
+}
+
+.voile{
+    height: 601px;
+    width: 601px;
+    background: #494399;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right:auto ;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.rectangle-2{
+    width: 90%;
+    height: 400px;
+    background-color: #72EFE9;
+    position: absolute;
+    z-index: 1;
+    border-radius: 40px;
+    top: 40%;
+}
+
+
+
+/* .voile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    z-index: 3;
+} */
+
+
+
+@media only screen and (min-width: 1100px) {
+    .image-propos{
+        height: 500px;
+    }
+
+    .text{
+        height: 500px;
+        width: 500px;
+    }
+
+    .text p{
+        font-size: 20px;
+    }
+
+    .container-propos-1 h1{
+        font-size: 45px;
+    }
+}

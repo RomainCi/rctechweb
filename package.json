@@ -4,12 +4,12 @@
         "dev": "vite",
         "build": "vite build"
     },
-    "devDependencies": {
-        "axios": "^1.1.2",
-        "laravel-vite-plugin": "^0.7.2",
-        "vite": "^4.0.0"
-    },
     "dependencies": {
-        "hammerjs": "^2.0.8"
+        "axios": "^1.7.3",
+        "gsap": "^3.12.5",
+        "hammerjs": "^2.0.8",
+        "laravel-vite-plugin": "^1.0.5",
+        "splitting": "^1.1.0",
+        "vite": "^5.3.5"
     }
 }

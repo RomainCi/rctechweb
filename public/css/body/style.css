@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background: black;
+    background: #494399;
+    overflow: hidden;
 }
 
 @keyframes rotate {
@@ -16,7 +17,7 @@ body {
 
 }
 
-#blob {
+/* #blob {
     height: 50vmax;
     aspect-ratio: 1;
     position: fixed;
@@ -32,9 +33,10 @@ body {
     );
     animation: rotate 20s infinite;
     opacity: 0.6;
-}
+} */
 
 
-.blur {
+/* .blur {
     backdrop-filter: blur(12vmax);
-}
+    position: relative;
+} */
