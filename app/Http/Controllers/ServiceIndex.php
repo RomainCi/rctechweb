@@ -14,42 +14,42 @@ class ServiceIndex extends Controller
         $cards = [
             [
                 "title" => "Site vitrine et E-commerce",
-                "image" => asset("assets/home/bobasiteCarre.jpg"),
-                "text" => "Vous souhaitez un site vitrine pour présenter votre activité ou votre projet ? Ou alors digitaliser votre commerce ? Bonnie & Cloud est là pour vous aider. Analyse/Création/Suivi, tout les outils principaux pour bien vous lancer dans le monde du digital. "
+                "image" => asset("assets/service/shopping.webp"),
+                "text" => "Vous souhaitez créer un site vitrine ou lancer votre boutique en ligne ? RC Tech Web vous accompagne, de l'analyse à la création sur mesure, avec un suivi personnalisé. Tous les outils essentiels pour réussir votre projet, qu'il s'agisse de visibilité ou d'e-commerce.",
             ],
             [
                 "title" => "Application web",
-                "image" => asset("assets/home/bobasiteCarre.jpg"),
-                "text" => "Vous souhaitez une application multiplatforme ? Choisissez l'application web. Pas de téléchargement, des mises à jour simples à réaliser, l'application Web peut-être la solution pour votre projet. "
+                "image" => asset("assets/service/multisupport.webp"),
+                "text" => "Vous envisagez une application multiplateforme ? Optez pour une application web. Sans téléchargement, avec des mises à jour simplifiées, elle offre une solution flexible et efficace pour répondre aux besoins de votre projet.",
             ],
             [
                 "title" => "Web design",
-                "image" => asset("assets/home/bobasiteCarre.jpg"),
+                "image" => asset("assets/service/webdesign.webp"),
                 "text" => "
 
-                Votre identité de marque (logo, design de tous supports web) est créée sur mesure pour répondre aux besoins de votre cible.
+                Votre identité de marque (logo, design pour tous vos supports web) est conçue sur mesure pour captiver votre audience cible.
 
-                    Design de site internet
-                    Application web & mobile
-                    Mise en page de contenu
+Design de sites internet
+Applications web & mobiles
+Mise en page de contenu
+Chaque élément est pensé pour refléter vos valeurs et renforcer votre présence en ligne.
 
                 "
             ],
             [
                 "title" => "SEO et SEA",
-                "image" => asset("assets/home/bobasiteCarre.jpg"),
-                "text" => "
+                "image" => asset("assets/service/seo.webp"),
+                "text" => "Votre site est conçu pour apparaître en tête des résultats des moteurs de recherche.
 
-                Votre site internet est développé avec pour objectif d’apparaître dans les premières pages sur les moteurs de recherche.
-
-                    temps de chargement des pages optimisés
-                    Indexation automatique des pages
-                    Intégration des différents réseaux sociaux
+Pages à chargement optimisé
+Indexation automatique
+Intégration des réseaux sociaux
 
                 "
             ]
         ];
-
-        return view("home.index")->with("cards", $cards);
+        return view('home.index')->with([
+            'cards' => $cards
+        ]);
     }
 }

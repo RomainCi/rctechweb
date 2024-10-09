@@ -1,47 +1,135 @@
 .section-service {
-    /* margin-left: 10%;
-    margin-right: 10%; */
     margin-top: 5%;
+    height: 100vh;
+ 
 }
 .title-service h1 {
-    color: white;
+    color: #F0F0F0;
     text-align: center;
-    font-family: monospace;
+    font-family: "montserrat",sans-serif;
+    font-size: 3rem;
 }
-.container-service {
+
+.demoWrapper {
+    width: 680px;
+    height: 400px;
+    margin: 50px auto;
+    perspective: 1100px;
+    transform-style: preserve-3d;
+    margin-bottom: 200px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 70px;
-}
-.content-service {
-    width: 300px;
-    border: 1px solid white;
-    border-radius: 10px; /* Coins arrondis, ajustez selon vos besoins */
-    padding: 10px;
-    box-shadow: 0 4px 8px rgb(247, 244, 244); /* Ombre légère */
+    justify-content: center;
+    align-items: end;
+    height: 90vh;
+    width: 100vw;
+    margin-top: 70px;
 }
 
-.image-service {
-    width: 100%;
-    height: 300px;
+.box {
+    position: absolute;
+    display: inline-block;
+    margin: 10px 20px 50px 235px;
+    overflow: hidden;
 }
-.content-service h4,
-p {
-    color: white;
-    font-family: "code", serif;
+
+.creative-pro {
+   padding: 40px 40px;
+   
+    height: 800px;
+    max-width: none !important;
+    width: 1300px;
+    border-radius: 40px;
+    background-color: white;
+    box-sizing: content-box;
+    margin: 0 !important;
+    display: flex;
+    
+}
+.card-body h4{
+    font-family: "montserrat",sans-serif;
+    font-size: 2.5rem;
+    color: #1818DD;
+}
+.card-clr {
+    font-size: 2rem;
+    font-family: "roboto",sans-serif;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.card-img-top{
+    width: 60%;
+    align-self: center;
+}
+.creative-pro:hover {
+    box-shadow: 0 4px 8px 0 #00fff3, 0 6px 20px 0 #00fff3;
+}
+
+
+.contact-button{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 70%;
+    height: 80px;
+    border-radius: 70px;
+    background: #1818DD;
+    color: #F0F0F0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0px 4px 8px 0px #72EFE9;
+    font-family: "roboto", sans-serif;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ////////////////MOBILE///////////////// */
+
+@media only screen and (max-width: 1100px) {
+.section-service{
+    height: auto;
+}
+.demoWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    gap: 30px;
+    margin-bottom: 0;
+}
+.creative-pro{
+    flex-direction: column;
+    width: 70vw;
+    height: auto;
+}
+
+.box{
+    position: static;
+}
+
+.card-body h4 {
+    font-size: 1rem;
     text-align: center;
-    font-size: 18px;
 }
-.container-service p {
-    font-size: 14px;
-    font-family: sans-serif;
-    text-align: left;
+.card-clr {
+    font-size: 1rem;
 }
 
-@media screen and (min-width: 1400px) {
-    .content-service:last-child {
-        margin-left: auto;
-        margin-right: auto;
-    }
+.contact-button {
+    width: 60%;
+    height: auto;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+   
+}
+.title-service h1{
+    font-size: 2rem;
+}
 }

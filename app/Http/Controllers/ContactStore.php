@@ -27,6 +27,11 @@ class ContactStore extends Controller
                 'firstname' => 'required|string|max:40',
                 'email' => 'required|email|max:100',
                 'text' => 'required|string|max:2000',
+            ], [
+                "lastname.required" => "Le champ 'nom' est requis",
+                "firstname.required" => "Le champ 'prénom' est requis",
+                "email.required" => "Le champ 'email' est requis",
+                "text.required" => "Le champ 'message' est requis"
             ]);
             DB::beginTransaction();
             try {

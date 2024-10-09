@@ -1,7 +1,7 @@
 @extends('base')
 
-@section('title', 'Accueil')
-@section('meta', 'coucou je suis la méta description')
+@section('title', 'RC Tech Web')
+@section('meta', 'Développeur web, je crée des sites modernes et performants sur mesure pour répondre à vos besoins numériques. Sites vitrines, e-commerce et plus.')
 @section('hero-banner', asset('css/include/hero-banner/style.css'))
 @section('service', asset('css/include/service/style.css'))
 @section('contact', asset('css/include/contact/style.css'))
@@ -11,8 +11,7 @@
 @section('content')
 @include('include.hero-banner.hero-banner')
 @include('include.propos.propos')
-@include('include.service.service')
 @include('include.realisation.realisation')
-
+@include('include.service.service')
 @include('include.contact.contact')
 @endsection

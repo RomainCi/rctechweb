@@ -9,12 +9,22 @@
 .text p{
     text-align: left;
     margin: 0;
-    color:#494399;
-    font-size: 16px;
+    color:#333333;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family:"roboto",sans-serif;
 }
 
 h1{
     margin-top: 0;
+  
+}
+
+.title-propos{
+    color:#F0F0F0 ;
+    font-size: 2rem;
+    font-family: "montserrat",sans-serif;
+    text-align: center;
 }
 .propos,.propos-2{
     height: 90vh;
@@ -28,8 +38,6 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* position: relative; */
-    /* height: 1150px; */
 }
 .content-text,.content-image,.content-text-2,.content-image-2{
     width: 50%;
@@ -44,8 +52,9 @@ h1{
 
 
 .text h4{
-font-size: 20px;
-color: #494399;
+font-size: 1.2rem;
+color: #1818DD;
+font-family: "montserrat",sans-serif;
 }
 
 .text{
@@ -104,11 +113,17 @@ color: #494399;
     margin-right:auto ;
     left: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .text-propos-2 p{
-    color:#494399;
-    font-size: 15px;
+    color:#333333;
+    font-size: 1.2rem;
+    font-family: "roboto", sans-serif;
     text-align: left;
+    line-height: 1.6;
 }
 
 .image-propos-2{
@@ -126,7 +141,7 @@ color: #494399;
 .voile{
     height: 601px;
     width: 601px;
-    background: #494399;
+    background: #1818dd;
     position: absolute;
     top:0;
     left: 0;
@@ -148,7 +163,9 @@ color: #494399;
 }
 
 
-
+.text-reveal{
+    font-family: "code",serif;
+}
 /* .voile::before {
     content: '';
     position: absolute;
@@ -162,6 +179,22 @@ color: #494399;
 } */
 
 
+.container-picto{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+    /* height: 100%; */
+}
+
+.container-picto i{
+    color: #1818DD;
+    font-size: 4rem;
+}
+
+.button-propos{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media only screen and (min-width: 1100px) {
     .image-propos{
@@ -174,10 +207,167 @@ color: #494399;
     }
 
     .text p{
-        font-size: 20px;
+        font-size: 1rem;
+
     }
 
     .container-propos-1 h1{
-        font-size: 45px;
+        font-size: 3rem;
+        font-family: "montserrat",sans-serif;
     }
 }
+
+
+
+/* ///////////////MOBILE//////////////////// */
+
+@media only screen and (max-width: 1100px){
+    #propos,#propos2{
+        margin-top: 15%;
+    }
+    .propos,.propos-2{
+        height: auto;
+    }
+    .propos-2{
+        margin-top: 20%;
+    }
+
+    .title-propos{
+        margin-bottom: 70px;
+    }
+
+    .content-text, .content-image {
+        display: contents; /* On va les réarranger dans la grille */
+    }
+    
+    /* Les cartes (images) et les textes prennent toute la largeur */
+    /* .cards img, .text {
+        width: 100%;
+    } */
+   
+        .container-propos {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+            grid-template-rows: auto;   /* Laisser les lignes s'ajuster */
+            grid-template-areas:
+                "image1"
+                "text1"
+                "image2"
+                "text2"
+                "image3"
+                "text3"; /* On intercale les images et les textes */
+        }
+     /* Assigner chaque élément à une zone de la grille */
+     .content-image .cards-1 {
+        grid-area: image1;
+        justify-self: center;
+    }
+
+    .content-text .text-1 {
+        grid-area: text1;
+        justify-self: center;
+    }
+
+    .content-image .cards-2 {
+        grid-area: image2;
+        justify-self: center;
+    }
+
+    .content-text .text-2 {
+        grid-area: text2;
+        justify-self: center;
+    }
+
+    .content-image .cards-3 {
+        grid-area: image3;
+        justify-self: center;
+    }
+
+    .content-text .text-3 {
+        grid-area: text3;
+        justify-self: center;
+    }
+
+    /* .content-image,.content-text,.container-propos{
+        flex-direction: column;
+    } */
+
+    .content-image,.content-text,.content-image-2,.content-text-2{
+        width: auto;
+    }
+    .text,.cards,.text-propos-2,.image-propos-2{
+        position: static;
+        width: 85vw;
+        max-width: 500px;
+        z-index: 0 !important;
+        margin: 0;
+        height: auto;
+    }
+
+    .image-propos,.image-propos-2{
+        height: auto;
+        width: 85vw;
+        max-width: 500px;
+    }
+
+    .rectangle-2{
+       position: absolute;
+       z-index: -1;
+       top: 99%;
+       height: 35vh;
+       width: 100%;
+       border-radius: 0;
+    }
+
+    .text p,.text-propos-2 p{
+        font-size: 1rem;
+    }
+    .text h4{
+        font-size: 1rem;
+    }
+    .container-picto i{
+        font-size: 2rem;
+    }
+    .container-propos-2{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .voile{
+        display: none;
+    }
+    .text-reveal{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .button-site{
+        width: 60%;
+        height: auto;
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1101px) and (max-width: 1300px){
+    .text-propos-2,.image-propos-2{
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .text-propos-2 p{
+        font-size: 1rem;
+    }
+    .propos-2,.propos{
+        height: 80vh;
+    }
+    .propos-2{
+        margin-top: 20%;
+     }
+
+}
+
+
+
+

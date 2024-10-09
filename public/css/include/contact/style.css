@@ -1,25 +1,59 @@
 #contact{
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
-h1 {
-    color: white;
+.title-contact h1 {
+    color: #F0F0F0;
     text-align: center;
-    font-family: monospace;
-    font-size: 40px;
+    font-family: "montserrat",sans-serif;
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+.container-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 10%;
+}
+.container-contact-image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.content-contact-color{
+    position: absolute;
+    width: 50vw;
+    background-color: #72EFE9;
+    height: 70vh;
+    right: 10%;
+    border-radius: 40px;
+}
+.content-contact-image{
+   width: 25vw;
+    position: absolute;
+    right: 0;
+    border-radius: 40px;
 }
 
+/* ///////////FORMULAIRE////////////// */
 #formulaire {
-    width: 35%;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 300px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .container-form {
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid white;
+    height: 62.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 80%;
 }
 
 .content-form {
@@ -30,16 +64,68 @@ h1 {
 }
 
 .container-form label {
-    color: white;
+    color: #F0F0F0;
     margin-bottom: 5px;
 }
+.container-form input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px #F0F0F0 solid;
+    color: #F0F0F0;
+    font-family: "roboto",sans-serif;
+    padding: 10px 12px;
+    font-size: 1.2rem;
+}
+.content-form textarea{
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px #F0F0F0 solid;
+    color: #F0F0F0;
+    font-size: 1.2rem;
+    font-family: "roboto",sans-serif;
+    padding: 10px 12px;
+    resize: none;
+}
+
+::placeholder {
+    color: #F0F0F0; 
+    font-size: 1.2rem;
+    opacity: 1;
+    font-family: "roboto",serif;
+  }
+
+.container-form input:focus,textarea:focus {
+    outline: none;
+    border-bottom: 3px #F0F0F0 solid;
+    transition: all 0.3s ease;
+  }
+  
+
 
 .button-form {
     width: 100%;
-    background-color: transparent;
-    color: white;
-    border-radius: 5px;
-    margin-top: 5px;
+    background-color: white;
+    color: #1818DD;
+    border-radius: 70px;
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 4px 0px #72EFE9; */
+    font-family: "roboto", sans-serif;
+    transition: all 0.3s ease;
+}
+/* .button-form:hover{
+    background-color: white;
+    color: #72EFE9;
+    box-shadow: 0px 0px 6px 0px white;
+} */
+.message-error{
+    color: red;
+    font-size: 0.8rem;
+    font-family: "roboto", sans-serif;
+    padding: 10px;
 }
 .session-message p{
     margin: 0;
@@ -47,9 +133,64 @@ h1 {
 }
 .success p{
     color: green;
-    font-size: 15px;
+    font-size: 1rem;
+    font-family: "roboto",sans-serif;
     text-align: center;
 }
 .error p{
-    color: red;;
+    color: red;
+    font-family: "roboto",sans-serif;
+    font-size: 1rem;
+}
+
+
+
+/* 
+///////////MOBILE/////////////// */
+
+@media screen and (max-width:1100px) {
+    .container-contact{
+        flex-direction: column;
+        height: auto;
+    }
+    .title-contact h1 {
+        margin-bottom: 90px;
+    }
+    #formulaire{
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-contact-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .content-contact-color{
+        position: static;
+        height: 230px;
+        width: 100vw;
+        border-radius: 0;
+    }
+    .container-form{
+        height: auto;
+    }
+
+    .content-contact-image{
+        right: auto;
+        width: 50vw;
+        max-width: 225px;
+    }
+    .title-contact h1{
+        font-size: 2rem;
+    }
+    .button-form{
+        height: auto;
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
 }

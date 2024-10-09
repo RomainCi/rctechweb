@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    background: #494399;
+    background: #1818dd;
     overflow: hidden;
+    cursor: none;
 }
 
 @keyframes rotate {
@@ -17,26 +18,39 @@ body {
 
 }
 
-/* #blob {
-    height: 50vmax;
-    aspect-ratio: 1;
+#lottie-container{
+    height: 100px;
+    width: 100px;
     position: fixed;
-    left: 50%;
-    right: 50%;
-    translate: -50% -50%;
-    border-radius: 50%;
-    background: radial-gradient(
-        circle,
-        white,
-        #1D0076,
-        #165313
-    );
-    animation: rotate 20s infinite;
-    opacity: 0.6;
-} */
+    z-index: 100;
+    pointer-events: none;
+}
 
+#lottie-mouse{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    z-index: 100;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
 
-/* .blur {
-    backdrop-filter: blur(12vmax);
-    position: relative;
-} */
+button {
+    cursor: pointer; /* Afficher le curseur pointer sur ces éléments */
+}
+.content-free{
+    display: flex;
+}
+
+.content-free a{
+    color: white;
+    align-self: center;
+    font-family: "roboto",sans-serif;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1100px){
+    body {
+        cursor: default;
+    }
+}

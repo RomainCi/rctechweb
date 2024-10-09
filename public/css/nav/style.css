@@ -4,7 +4,7 @@ header{
 .navbar {
     display: flex;
     justify-content: space-between;
-    height: 8vh;
+    height: 8.5vh;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -12,26 +12,30 @@ header{
     align-items: center;
     z-index: 5;
     /* border-bottom: 1px solid white; */
-    background-color: #494399;
+    background-color: #1818dd;
 }
 
 
 .progress-container {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
+    bottom: 0;
+    right: 5px;
+    width: 5px;
+    height: 80%;
     background:transparent;
     z-index: 99;
+    align-self: center;
+    /* background-color: red; */
 }
 
 .progress-bar {
-    width: 0;
-    height: 100%;
-    background: #72EFE9;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
+    width: 100%;
+    height: 0;
+    background: #F0F0F0;
+    border-radius: 40px;
+    /* border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px; */
 }
 .nav-menu {
     margin: 0;
@@ -40,6 +44,10 @@ header{
     gap: 60px;
     align-items: center;
     padding: 0 30px 0 0;
+}
+
+.logo img{
+    height: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -65,8 +73,11 @@ header{
 
 .nav-link {
     color: white;
+    font-size: 1.3rem;
     text-decoration: none;
-    font-family: "code",sans-serif ;
+    text-transform: uppercase;
+    font-family: "montserrat",sans-serif;
+    font-weight: 900;
 }
 
 .nav-hamburger {
@@ -95,7 +106,7 @@ header{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     .nav-hamburger {
         display: block;
     }
@@ -124,17 +135,8 @@ header{
         transition: 0.3s;
         z-index: 4;
         height: 92vh;
-        /* background: radial-gradient(circle, white, #1D0076, #165313); */
-    
-            background-image: radial-gradient(
-              farthest-corner at 40px 40px,
-              #f35 0%,
-              #43e 100%
-            );
-  
-          
-        border-top: white solid 1px;
         padding: 0;
+        background-color: #1818DD;
         backdrop-filter: blur(12vmax)
     }
 
@@ -145,7 +147,7 @@ header{
     }
 
     .navbar.active{
-        background: black;
+        /* background: black; */
         transition: all 0.5s ease-in-out;
     }
 

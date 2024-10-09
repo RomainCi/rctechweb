@@ -1,13 +1,15 @@
 @font-face {
-    font-family: "code";
-    src: url("../../../assets/fonts/MonumentExtended-Regular.otf")
-        format("opentype");
+    font-family: "montserrat";
+    src: url("../../../assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "openSans";
+    src: url("../../../assets/fonts/OpenSans_Condensed-Regular.ttf");
 }
 
 @font-face {
-    font-family: "codebold";
-    src: url("../../../assets/fonts/monumentExtended-ultrabold.otf")
-        format("opentype");
+    font-family: "roboto";
+    src: url("../../../assets/fonts/Roboto-Regular.ttf");
 }
 
 @keyframes appear {
@@ -24,9 +26,7 @@
 
 
 .section-hero-banner {
-    /* height: 100vh;
-    background-image: url(../../../assets/home/hero-banner.webp); */
-    background-color: #494399;
+    background-color: #1818DD;
 }
 
 
@@ -68,56 +68,26 @@
     background-color: white;
     position: absolute;
     bottom: 95px;
-    margin-left: 564px;
+    margin-left: 800px;
     border-radius: 40px;
 }
 
-.content-title h1,
-p {
-    color: #494399;
-  
-}
 
 .content-title h1 {
-    font-family: monospace;
-    font-size: 30px;
-    /* animation: reveal linear;
-    animation-timeline: view();
-    animation-range: cover 60% exit-crossing 100%; */
-    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+    font-family: "montserrat",sans-serif;
+    font-size: 2rem;
+    color: #1818DD;
 }
 
 .content-title p {
-    font-size: 16px;
-    font-family: "code", serif;
-    text-align: justify;
+    font-size: 1.2rem;
+    font-family: "roboto", sans-serif;
+    text-align: left;
     text-justify: inter-word;
     width: 80%;
-    color: #494399;
+    line-height: 1.6;
+    color:#333333;
 }
-
-/* @media screen and (min-width: 1000px) {
-    .container-hero-banner {
-        flex-direction: row;
-    }
-
-    .content-title {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .content-title h1{
-        font-size: 50px;
-    }
-
-    .content-title p {
-        font-size: 25px;
-    }
-} */
-
 
 @keyframes reveal {
     from {
@@ -138,3 +108,121 @@ p {
     animation-range: cover 70% cover 80%;
   
 }
+
+
+.container-mouse{
+    /* background-color: red; */
+    position: absolute;
+    bottom: 31.5%;
+    /* top: 1%; */
+}
+
+.mouse-effect{
+    box-sizing: content-box;
+    height: 2.5rem;
+    border-radius: 3.5rem;
+    border: white solid 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.mouse-button{
+    height: .75rem;
+    width: .25rem;
+    border-radius: .25rem;
+    --tw-bg-opacity: 1;
+    background-color: white;
+    /* background-color: rgba(255, 255, 255, var(--tw-bg-opacity)); */
+    -webkit-animation-name: scroll-hint;
+    animation-name: scroll-hint;
+    -webkit-animation-duration: 2.2s;
+    animation-duration: 2.2s;
+    -webkit-animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.mouse-arrow{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.mouse-arrow i {
+    color: white;
+    -webkit-animation-name: scroll-hint;
+    animation-name: arrow-hint;
+    -webkit-animation-duration: 2.2s;
+    animation-duration: 2.2s;
+    -webkit-animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll-hint {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    
+}
+@keyframes arrow-hint {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(35px);
+        opacity: 0;
+    }
+    
+}
+
+
+/* /////////////////////MOBILE///////////////////// */
+
+@media only screen and (max-width: 1100px) {
+    .image-hero-banner{
+        width: 85vw;
+        height: auto;
+    }
+
+    .rectangle{
+        width: 70vw;
+        height: 120vh;
+    }
+
+    .content-title{
+        width: 85vw;
+        margin-left: 0;
+        box-sizing: border-box;
+        height: auto;
+        bottom: 14vh;
+        padding: 20px 30px;
+    }
+
+    .content-title h1{
+        font-size: 1.2rem;
+    }
+    .content-title p{
+        font-size: 1rem;
+    }
+    .container-mouse{
+        display: none;
+    }
+}
+

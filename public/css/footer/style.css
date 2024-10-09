@@ -3,11 +3,18 @@ footer{
     justify-content: space-between;
     margin-top: 100px;
     padding: 20px;
-    border-top: white solid 1px;
+    border-top: #F0F0F0 solid 3px;
 }
 
 .logo-footer{
     width: 600px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+i{
+    font-size: 2rem;
+    color: #F0F0F0;
+    cursor: pointer;
 }
