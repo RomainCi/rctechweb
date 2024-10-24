@@ -61,6 +61,7 @@ function navbarClick() {
             event.preventDefault();
             // Récupérer l'ancre de l'URL
             let anchor = e.href.split("#")[1];
+            console.log("nav",anchor)
             // Vérifier si l'ancre existe dans le document
             let targetElement = document.getElementById(anchor);
             // Si l'ancre existe, aller directement à l'élément
@@ -80,6 +81,8 @@ function navbarClick() {
                 hamburger.classList.toggle("active");
                 navMenu.classList.toggle("active");
                 navbar.classList.toggle("active");
+            }else{
+                window.location.href = "https://www.rc-dev.pro/"
             }
         });
     });

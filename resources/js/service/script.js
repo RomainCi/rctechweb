@@ -80,6 +80,4 @@ if (isLaptop()) {
             });
         });
     }
-} else {
-    console.log("hello");
-}
+} 

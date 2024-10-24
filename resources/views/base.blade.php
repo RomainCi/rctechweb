@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="@yield('realisation')">
     <link rel="stylesheet" href="@yield('propos')">
     <link rel="stylesheet" href="{{ asset('css/nav/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/body/style.css') }}">
+    <link rel="stylesheet" href="@yield('body')">
     <link rel="stylesheet" href="{{asset('css/footer/style.css')}}">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.4/lottie.min.js" defer></script>
@@ -25,14 +25,12 @@
 </head>
 
 <body class="antialiased">
-    <!-- <div id="blob"></div>
-    <div class="blur main"> -->
     <div id="lottie-mouse"></div>
     <div id="lottie-container"></div>
 
     <header>
         <nav class="navbar">
-            <div class="logo"><img src="{{ asset('assets/logo/rctech.webp') }}" alt="logo"></div>
+            <div class="logo"><a href="https://www.rc-dev.pro/"><img src="{{ asset('assets/logo/rctech.webp') }}" alt="logo"></a></div>
             <div class="progress-container">
                 <div class="progress-bar" id="progressBar"></div>
             </div>

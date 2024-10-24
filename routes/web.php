@@ -16,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', ServiceIndex::class)->name('service.index');
+Route::get('/mention-legales', function () {
+    return view('mention-legales.index');
+});
+
+
 Route::post('/contact', ContactStore::class)->name('contact.store');

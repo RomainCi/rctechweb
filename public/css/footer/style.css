@@ -18,3 +18,7 @@ i{
     color: #F0F0F0;
     cursor: pointer;
 }
+
+.content-free a{
+    font-size: 0.6rem;
+}

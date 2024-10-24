@@ -158,6 +158,4 @@ if (isLaptop()) {
     lenis.on("scroll", () => {
         ScrollTrigger.update();
     });
-} else {
-    console.log("je suis dans le esle");
-}
+} 

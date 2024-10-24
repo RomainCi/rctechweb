@@ -50,7 +50,7 @@ header{
     height: 3rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1101px) {
     .navbar{
         position: relative;
     }
@@ -137,7 +137,8 @@ header{
         height: 92vh;
         padding: 0;
         background-color: #1818DD;
-        backdrop-filter: blur(12vmax)
+        backdrop-filter: blur(12vmax);
+        justify-content: space-evenly;
     }
 
     .nav-menu.active {
