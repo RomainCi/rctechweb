@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="@yield('contact')">
     <link rel="stylesheet" href="@yield('realisation')">
     <link rel="stylesheet" href="@yield('propos')">
-    <link rel="stylesheet" href="{{ asset('css/nav/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/nav/style-v2.css') }}">
     <link rel="stylesheet" href="@yield('body')">
     <link rel="stylesheet" href="{{asset('css/footer/style.css')}}">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -64,7 +64,7 @@
     </main>
 
     <footer>
-        <div class="logo"><img src="{{asset('assets/logo/rctech.webp')}}" alt="logo"></div>
+        <div class="logo"><a href="/mention-legales"><i class="fa-solid fa-file-contract"></i></a></div>
         <div class="content-free"> <a href="https://www.freepik.com" target="_blank">Les images sont concus par freepick</a></div>
         <div class="logo-footer">
             <a href="https://www.instagram.com/rctechweb/" target="blank"><i class="fa-brands fa-instagram"></i></a>
