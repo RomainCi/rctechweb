@@ -46,7 +46,7 @@ class ContactStore extends Controller
                     "text" => $data['text'],
                 ]);
 
-                Mail::to("contact@rctechweb.fr")->send(new ContactMail($data));
+                Mail::to("romain@rc-dev.pro")->send(new ContactMail($data));
                 DB::commit();
                 Session::flash('successMessage', 'Votre formulaire a été envoyé avec succes');
                 return Redirect::to(URL::previous() . "#formulaire");

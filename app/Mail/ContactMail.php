@@ -29,7 +29,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address("no-reply@rctechweb.fr"),
+            from: new Address("no-reply@rc-dev.pro"),
             subject: 'Contact ' . $this->data['lastname'],
         );
     }
