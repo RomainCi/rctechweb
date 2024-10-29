@@ -15,10 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', ServiceIndex::class)->name('service.index');
+Route::get('/', ServiceIndex::class)->name('home.index');
+
 Route::get('/mention-legales', function () {
     return view('mention-legales.index');
-});
+})->name('mention-legales.index');
 
+Route::get('/contact',function(){
+    return abort(404);
+});
 
 Route::post('/contact', ContactStore::class)->name('contact.store');

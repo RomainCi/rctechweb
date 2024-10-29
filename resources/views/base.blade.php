@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="{{ asset('css/nav/style-v2.css') }}">
     <link rel="stylesheet" href="@yield('body')">
     <link rel="stylesheet" href="{{asset('css/footer/style.css')}}">
+    <link
+        rel="sitemap"
+        type="application/xml"
+        title="sitemap"
+        href="{{config('app.url')}}/sitemap.xml"
+    >
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.4/lottie.min.js" defer></script>
     <script type="text/javascript" src="{{ asset('js/base/script.js') }}" defer></script>
