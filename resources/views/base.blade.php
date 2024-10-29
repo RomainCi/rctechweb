@@ -3,8 +3,8 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MB1RLKCGWY"></script>
-    <script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-MB1RLKCGWY"></script>
+    <script defer>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
