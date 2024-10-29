@@ -12,7 +12,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command('generate-sitemap');
+        $schedule->command('generate-sitemap')->dailyAt('12:30');
     }
 
     /**
