@@ -3,14 +3,17 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MB1RLKCGWY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MB1RLKCGWY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-MB1RLKCGWY');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MB1RLKCGWY');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="@yield('meta')">
@@ -27,8 +30,7 @@
         rel="sitemap"
         type="application/xml"
         title="sitemap"
-        href="{{config('app.url')}}/sitemap.xml"
-    >
+        href="{{config('app.url')}}/sitemap.xml">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.4/lottie.min.js" defer></script>
     <script type="text/javascript" src="{{ asset('js/base/script.js') }}" defer></script>
@@ -91,7 +93,7 @@
 
     </div>
     <script src="https://kit.fontawesome.com/40f157f11e.js" crossorigin="anonymous" defer></script>
-    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js" async></script>
 </body>
 
 </html>
